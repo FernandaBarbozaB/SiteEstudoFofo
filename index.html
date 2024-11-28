@@ -1,0 +1,48 @@
+HTML
+<!DOCTYPE html>
+<body>
+  <html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Estudo Fofo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Seção principal do site -->
+    <div class="container">
+      <div class="cronometro">
+    <img id="bichinho" src="https://i.pinimg.com/originals/05/29/4f/05294f4a4d240a5e37a9f224c153d8f8.gif" />
+    <h1>Cronômetro</h1>
+    <p id="timer">00:00:00</p>
+    <button id="startPauseBtn">Iniciar</button>
+    <button id="resetBtn">Resetar</button>
+</div>
+
+
+        <!-- Notas -->
+        <div class="notas">
+            <button id="toggleNotes">Mostrar/Esconder Notas</button>
+            <textarea id="notasTexto" placeholder="Digite suas notas aqui..."></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  <button id="calendarBtn"> Calendário</button>
+
+<div id="calendarModal" class="modal">
+  <div class="modal-content">
+    <span id="closeCalendar" class="close">&times;</span>
+    <iframe 
+      src="https://calendar.google.com/calendar/embed?src=pt.brazilian%23holiday%40group.v.calendar.google.com&ctz=America%2FSao_Paulo" 
+      style="border: 0" 
+      width="100%" 
+      height="400" 
+      frameborder="0" 
+      scrolling="no">
+    </iframe>
+  </div>
+</div>
+
+</body>
+</html>
