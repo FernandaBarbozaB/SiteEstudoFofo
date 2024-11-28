@@ -1,0 +1,135 @@
+/* Estilo geral do site */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fbe7e7; /* Cor de fundo de segurança */
+    background-image: url('https://images2.alphacoders.com/130/thumb-1920-1300030.png'); /* ADICIONE SUA IMAGEM AQUI */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Container principal */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Cronômetro */
+.cronometro {
+    margin-bottom: 20px;
+}
+
+.cronometro h1 {
+    font-size: 24px;
+    color: #ff7b7b;
+}
+
+#timer {
+    font-size: 36px;
+    color: #333;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ffb6c1;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #ff7b7b;
+}
+
+/* Notas */
+.notas {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5
+    padding: 10
+    font-size: 1x;
+    resize: none;
+}
+
+/* Botão de alternar notas */
+#toggleNotes {
+    margin-bottom: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+#bichinho {
+    width: 200px; /* Define a largura */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Centraliza a imagem */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border-radius: 50%; /* Deixa a imagem com bordas arredondadas (opcional) */
+  
+  /* Modal - escondido por padrão */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background-color: #f9f9f9;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de fechar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
